@@ -2,18 +2,18 @@ function breakOut(arr, chngVal, stopVal) {
   for(let i = 0; i < arr.length; i++ ) {
     if(arr[i] === stopVal) {
       break;
-    } else {
-      arr[i] = chngVal;
     }
+    arr[i] = chngVal;
   }
   return arr;
 }
 
 function keepGoing(arr, chngVal, skipVal) {
   for(let idx = 0; idx < arr.length; idx++) {
-    if(arr[idx] !== skipVal) {
-      arr[idx] = chngVal;
+    if(arr[idx] === skipVal) {
+      continue;
     }
+    arr[idx] = chngVal;
   }
   return arr;
 }
