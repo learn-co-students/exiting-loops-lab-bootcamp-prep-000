@@ -27,6 +27,6 @@ function findBy(array, findFn){
     }else{
       continue;
     }
-    return null;
   }
+  return null;
 }
