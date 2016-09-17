@@ -28,5 +28,5 @@ function findBy(array, findFn) {
       return array[i]
     }
 }
-return null 
+return null // the null s outside because we want the function to return null  if it doesnt match it
 }
