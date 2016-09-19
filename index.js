@@ -21,11 +21,11 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
+  var found = null
   for (var i = 0, l = array.length; i < l; i++) {
-
     if (array[i].hasOwnProperty(findFn)) {
-      return array[i]
+      found = array[i]
     }
   }
-  return null
+return found
 }
