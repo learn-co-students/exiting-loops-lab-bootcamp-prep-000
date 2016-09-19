@@ -27,5 +27,5 @@ function findBy(array, findFn) {
       found = array[i]
     }
   }
-return found
+  return found
 }
