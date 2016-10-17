@@ -22,7 +22,7 @@ describe('loops', function() {
     it('finds the a value that satisfies `findFn`', function() {
       const c = Math.floor(Math.random() * 100)
 
-      expect(findBy([1, 1, 1, 1, c, 1, 2], c)).toEqual(c)
+      expect(findBy([1, 1, 1, 1, c, 1, 2], n => n === c)).toEqual(c)
     })
 
     it('returns `null` if no match found', function() {
