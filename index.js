@@ -3,7 +3,6 @@ function breakOut(arr, changeVal, stopVal) {
     if (arr[i] === stopVal) {
       break
     }
-
     arr[i] = changeVal
   }
 
