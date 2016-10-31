@@ -18,15 +18,15 @@ describe('loops', function() {
     })
   })
 
-  describe('findBy(array, findFn)', function() {
-    it('finds the a value that satisfies `findFn`', function() {
-      const c = Math.floor(Math.random() * 100)
-
-      expect(findBy([1, 1, 1, 1, c, 1, 2], n => n === c)).toEqual(c)
-    })
-
-    it('returns `null` if no match found', function() {
-      expect(findBy(["dog", "cat", "cow"], a => a === "moose")).toEqual(null)
-    })
-  })
+  // describe('findBy(array, findFn)', function() {
+  //   it('finds the a value that satisfies `findFn`', function() {
+  //     const c = Math.floor(Math.random() * 100)
+  //
+  //     expect(findBy([1, 1, 1, 1, c, 1, 2], n => n === c)).toEqual(c)
+  //   })
+  //
+  //   it('returns `null` if no match found', function() {
+  //     expect(findBy(["dog", "cat", "cow"], a => a === "moose")).toEqual(null)
+  //   })
+  // })
 })
