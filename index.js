@@ -1,12 +1,13 @@
-function breakOut(array, changeValue, stopValue)
-{
-    array.forEach((item, i) => {
-        if (item == stopValue) {
-            return;
-        }
-        array[i] = changeValue;
-    });
-    return array;
+function breakOut(array, changeValue, stopValue) {
+  for (let i = 0, l = array.length; i < l; i++) {
+    if (array[i] === stopValue) {
+      break
+    }
+
+    array[i] = changeValue
+  }
+
+  return array
 }
 
 function keepGoing(array, changeValue, skipValue)
@@ -19,14 +20,13 @@ function keepGoing(array, changeValue, skipValue)
     return array;
 }
 
-function findBy(array, findFn)
-{
-    let result = null;
-    for (var i = 0; i < array.length-1; i++) {
-        if (array[i] == findFn)
-        {
-            result = findFn;
-        }
+
+function findBy(array, findFn) {
+  for (let i = 0, l = array.length; i < l; i++) {
+    if (findFn(array[i])) {
+      return array[i]
     }
-    return result;
+  }
+
+  return null
 }
