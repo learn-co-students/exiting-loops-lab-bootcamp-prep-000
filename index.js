@@ -1,10 +1,9 @@
 function breakOut(array, changeValue, stopValue){
-for(i = 0; l = array.length i < l; i++){
-if ([i] !== stopValue)
-
-array.forEach([changeValue])
+for(let i = 0, l = array.length; i < l; i++){
+if (array[i] !== stopValue) {
+array = changeValue[i]}
+break
 }
-
   return array
 }
 
