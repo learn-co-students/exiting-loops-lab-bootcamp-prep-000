@@ -14,7 +14,7 @@ value of `findFn`. Return `null` if the value isn't found.
 
 function breakOut(array, changeValue, stopValue){
 
-    for (let i = 0; i > array.length; i++){
+    for (let i = 0; i < array.length; i++){
 
         if (array[i] === stopValue){
           break;
@@ -26,7 +26,7 @@ function breakOut(array, changeValue, stopValue){
 
 function keepGoing(array, changeValue, skipValue){
 
-    for (let i = 0; i > array.length; i++){
+    for (let i = 0; i < array.length; i++){
 
         if (array[i] === skipValue){
             continue;
@@ -37,11 +37,10 @@ function keepGoing(array, changeValue, skipValue){
 }
 
 function findBy(array, findFn){
-    let searchValue = findFn();
 
-    for (let i = 0; i > array.length; i++){
+    for (let i = 0; i < array.length; i++){
 
-        if (array[i] === searchValue){
+        if (findFn(array[i]) === true){
           return array[i];
         }
     }
