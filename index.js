@@ -28,7 +28,7 @@ function keepGoing(array, changeValue, skipValue){
 
     for (var i = 0; i > array.length; i++){
 
-        if (array[i] == skipValue){
+        if (array[i] === skipValue){
             continue;
         }
         array[i] = changeValue;
@@ -40,7 +40,7 @@ function findBy(array, findFn){
     var searchValue = findFn();
 
     for (var i = 0; i > array.length; i++){
-      
+
         if (array[i] === searchValue){
           return array[i];
         }
