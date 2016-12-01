@@ -2,7 +2,7 @@ function breakOut(array, changeValue, stopValue) {
   for (let i = 0, l = array.length; i < l; i++) {
     if (array[i] != stopValue) {
       array[i] = changeValue;
-    } if (array[i] == stopValue) {
+    } if (array[i] === stopValue) {
       break
     }
   }
@@ -11,7 +11,7 @@ function breakOut(array, changeValue, stopValue) {
 
 function keepGoing(array, changeValue, skipValue) {
   for (let i = 0, l = array.length; i < l; i++) {
-    if (array[i] == skipValue) {
+    if (array[i] === skipValue) {
       continue
     } if (array[i] != skipValue) {
       array[i] = changeValue;
