@@ -23,7 +23,7 @@ function findBy(array, findFn) {
 
   for (let i = 0, l = array.length; i < l; i++) {
     if (findFn(array[i]) /*=== true*/) {
-      return array[i]
+      return array[i] // return exits the entire function!
     }
   }
   return null
