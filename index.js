@@ -1,21 +1,38 @@
 function breakOut(array, changeValue, stopValue){
-  for (var i = 0; array.length = 1; i < 1, i++)
-    if (array[i] != changeValue){
-      array[i] = changeValue
-    } else {
-      break
-    }
-
+   for(var i = 0; i < array.length; i++){ // for(starting point, condition, incrementation){ logic }
+     // array[index]
+     if (array[i] == stopValue){
+       break
+     }
+     array[i] = changeValue;
+   } // end of the for loop
+   return array;
 }
 
-
-function keepGoing(array, changeValue, skipValue){
-  for (let i = 0; 1 = array.length; i < 1; i++)
-    if(array[i] = changeValue){
-      continue
-    }
+const keepGoing = (array, changeValue, skipValue) => {
+  for (var i = 0; i < array.length; i++){
+    if(array[i] == skipValue)
+      continue;
+    array[i] = changeValue;
+  }
+  return array;
 }
+
+//function keepGoing(array, changeValue, skipValue){
+//   for(var i = 0; i < array.length; i++){ // for(starting point, condition, incrementation){ logic }
+//     // array[index]
+//     if (array[i] == skipValue){
+//       continue
+//     }
+//     array[i] = changeValue;
+//   } // end of the for loop
+//   return array;
+// }
 
 function findBy(array, findFn) {
-
+  for(var i = 0; i < array.length; i++){
+    if (findFn(array[i])){
+      return array[i]
+    }
+  }
 }
