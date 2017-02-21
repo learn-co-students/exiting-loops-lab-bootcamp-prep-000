@@ -20,7 +20,7 @@ var keepGoing = function(array, changeValue, skipValue) {
 
 
 
-findBy = function(array, findFn) {
+var findBy = function(array, findFn) {
   var location = array.indexOf(findFn)
   if (location === -1) {
     return null;
