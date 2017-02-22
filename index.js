@@ -21,10 +21,10 @@ var keepGoing = function(array, changeValue, skipValue) {
 
 
 var findBy = function(array, findFn) {
-  var location = array.indexOf(findFn)
-  if (location === -1) {
-    return null;
-  } else {
-    return location;
+  for (let i = 0; i < array.length; i++) {
+    if (findFn(array[i])) {
+      return array[i];
+    }
   }
+  return null;
 }
