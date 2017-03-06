@@ -10,10 +10,9 @@ function breakOut(array, changeValue, stopValue) {
       return array;
 }
 function findBy(array, findFn) {
-  var val = findFn();
   for (var i = 0; i < array.length; i++) {
-    if (array[i] === val) {      
-     return val;
+    if (findFn(array[i])) {      
+     return array[i];
    }
 }
      return null;
