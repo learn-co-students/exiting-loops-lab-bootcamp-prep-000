@@ -28,17 +28,14 @@ function keepGoing(array, changeValue, skipValue)
   return array;
 }
 
-/*function findBy(array, findFn)
+function findBy(array, findFn)
 {
   for (var i=0; i<array.length; i++)
   {
-    if (findFn)
+    if (findFn(array[i]))
     {
-      return findFn;
-    }
-    else {
-      return null;
+      return array[i];
     }
   }
-  
-}*/
+  return null;
+}
