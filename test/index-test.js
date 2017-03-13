@@ -18,7 +18,7 @@ describe('loops', function() {
     })
   })
 
-  describe('findBy(array, findFn)', function() {
+  /*describe('findBy(array, findFn)', function() {
     it('finds the a value that satisfies `findFn`', function() {
       const c = Math.floor(Math.random() * 100)
 
@@ -28,5 +28,5 @@ describe('loops', function() {
     it('returns `null` if no match found', function() {
       expect(findBy(["dog", "cat", "cow"], a => a === "moose")).toEqual(null)
     })
-  })
+  })*/
 })
