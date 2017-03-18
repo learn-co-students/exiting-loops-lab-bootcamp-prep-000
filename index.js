@@ -19,23 +19,20 @@ function keepGoing(array, changeValue, skipValue){
   }
   return array
 }
-
+// I wanted to practice callbacks but it did not work.
 /*function findBy(array, findFn){
-  array.forEach(function callback(element,index,array){
-//    if(findFn(element)){
-      if(findFn(array[index])){
+  array.forEach(function(element,index,array){
+      if(findFn(array[index])) {
       return array[index]
-  }   else{
-      return null
   }
   })
 }*/
 
 function findBy(array, findFn) {
-  for (let i=0; i < array.length; i++) { 
+  for (let i=0; i < array.length; i++) {
       if (findFn(array[i])) {
       return array[i];
       break;
-    }  
+    }
   }
 }
