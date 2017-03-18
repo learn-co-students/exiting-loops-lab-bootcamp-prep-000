@@ -1,30 +1,31 @@
-function breakOut(array,changeValue,stopValue) {
-    for(var i=0,l=array.length;i<l;i++){
-      if (array[i] === stopValue){
-      return array
-      }
-      else{
-        array[i] = changeValue
-      }
-    }return array
+function breakOut(array, changeValue, stopValue) {
+  for(var i = 0; i <array.length; i++){
+    if (array[i] === stopValue){
+      break
+    }
+    else{
+      array[i]=changeValue
+    }
+  }
+  return array
 }
 
-function keepGoing(array,changeValue,skipValue) {
-  for(var i = 0; i < array.length; i++){
-    if (array[i] === skipValue){
-      continue}
-    else {
-      array[i] = changeValue
-      }
+function keepGoing(array, changeValue, skipValue) {
+  for (var i = 0; i < array.length; i++){
+    if (array[i]===skipValue){
+      continue
     }
-  return array
+    else{
+      array[i] = changeValue
+    }
   }
+  return array
+}
 
 function findBy(array, findFn) {
-  for(var i = 0, l =array.length;i<l;i++){
-    if (findFn(array[i])===true) {
-      return array[i]
-    }
+  for (var i = 0; i < array.length; i++){
+    if (findFn(array[i]))
+    return array[i]
   }
-  return null
+    return null
 }
