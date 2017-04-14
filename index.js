@@ -1,9 +1,7 @@
 function breakOut(array, changeValue, stopValue){
-
-
   for(var i=0; i<array.length;i++){
     if(array[i]===stopValue){
-      break;
+      return array;
     }else{
       array[i] = changeValue;
     }
@@ -23,9 +21,9 @@ function keepGoing(array, changeValue, skipValue){
 }
 
 function findBy(array, findFn){
-  for(var i = 0; array.length; i++){
-    if(1){
-      return findFn;
+  for(var i = 0; i<array.length; i++){
+    if(findFn(array[i])){
+      return array[i];
     }
   }
   return null;
