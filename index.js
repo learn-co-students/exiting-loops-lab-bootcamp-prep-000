@@ -1,28 +1,30 @@
 function breakOut(array, changeValue, stopValue) {
-  for (var element in array) {
-    if (element === stopValue) {
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] === stopValue) {
       break;
+    } else {
+      array[i] = changeValue
     }
-    element = changeValue
   }
   return array
 }
 
 function keepGoing(array, changeValue, skipValue) {
-  for (var element in array) {
-    if (element === stopValue) {
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] === skipValue) {
       continue;
+    } else {
+        array[i] = changeValue
     }
-    element = changeValue
   }
   return array
 }
 
-findBy(array, findFn) {
-  for (var element in array) {
-    if (element === findFn) {
-      return element
+function findBy(array, findFn) {
+  for (var i = 0; i < array.length; i++) {
+    if (findFn(array[i])) {
+      return array[i]
     }
   }
-  return null
+  return
 }
